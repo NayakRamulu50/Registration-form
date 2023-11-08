@@ -1,0 +1,132 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.heading{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: solid;
+    transition: all .5s ease;
+}
+
+.heading:hover{
+    color: rgba(0, 123, 255, 0.875);
+    transform: rotate(1deg);
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-section img{
+    width: 700px;
+    transition: all 0.5s ease;
+}
+
+.logo-section img:hover{
+    transform: rotate(3deg);
+}
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+form {
+    animation: fadeIn 1s ease-in-out;
+    background: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    animation: pulse 1s infinite;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    visibility: hidden;
+    position: absolute;
+}
+
+.custom-checkbox .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.input-error {
+    animation: shake 0.5s ease-in-out;
+}

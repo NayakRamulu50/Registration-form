@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Registration Form with Animations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="heading">Registration Form with Animations</h1>
+    <main>
+        <section class="logo-section">
+
+            <img src="images/logo.png" alt="">
+        </section>
+        <section class="form-section">
+            <form id="registrationForm">
+                <h2>Registration Form</h2>
+                <div class="form-control">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" aria-label="Username" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" aria-label="Email" required>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password (8+ characters):</label>
+                    <input type="password" id="password" name="password" aria-label="Password" required>
+                    <small id="passwordHelp">Password must be at least 8 characters long.</small>
+                </div>
+                <div class="form-control">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" aria-label="Confirm Password"
+                        required>
+                </div>
+                <div class="form-control">
+                    <label for="custom-checkbox" class="custom-checkbox">
+                        <input type="checkbox" id="custom-checkbox" name="custom-checkbox" aria-label="Custom Checkbox">
+                        <span class="checkmark">&#43;</span> Subscribe to newsletter
+                    </label>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
